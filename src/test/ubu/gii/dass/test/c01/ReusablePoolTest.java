@@ -41,7 +41,7 @@ public class ReusablePoolTest {
 	@Test
 	public void testGetInstance() {
 		
-		// comprobamos que la instancia ha sido creada en el setUpW
+		// comprobamos que la instancia ha sido creada en el setUp
 		assertNotNull(rp);
 		assertEquals(rp, ReusablePool.getInstance());
 		
