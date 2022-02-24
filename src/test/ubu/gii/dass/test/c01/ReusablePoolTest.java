@@ -40,17 +40,11 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testGetInstance() {
-		if(rp == null) {
-			try { this.setUp();
-			} catch (Exception e) {}
-		}
 		
-		// comprobamos que la instancia ha sido creada
+		// comprobamos que la instancia ha sido creada en el setUpW
 		assertNotNull(rp);
 		assertEquals(rp, ReusablePool.getInstance());
 		
-		try { this.tearDown();
-		} catch (Exception e) {}
 	}
 
 	/**
@@ -58,10 +52,6 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testAcquireReusable() {
-		if(rp == null) {
-			try { this.setUp();
-			} catch (Exception e) {}
-		}
 		
 		// comprobamos la obtencion de los reusables
 		Reusable r1 = null;
@@ -83,9 +73,6 @@ public class ReusablePoolTest {
 			boolean outOfReusables = true;
 			assertTrue(outOfReusables);
 		}
-		
-		try { this.tearDown();
-		} catch (Exception e) {}
 	}
 
 	/**
@@ -95,10 +82,6 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testReleaseReusable() {
-		if(rp == null) {
-			try { this.setUp();
-			} catch (Exception e) {}
-		}
 		
 		try {
 			//obtenemos reusables y liberamos correctamente
@@ -126,9 +109,6 @@ public class ReusablePoolTest {
 			assertTrue(alreadyReleased);
 		}
 		
-		
-		try { this.tearDown();
-		} catch (Exception e) {}
 	}
 
 }
