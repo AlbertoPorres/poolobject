@@ -11,3 +11,13 @@ Authors:
 
 - Alberto Porres Fenández
 - Alejandro Romero Juarros
+ 
+Informe:
+
+- Se ha realizado un trabajo en grupo durante la realización de la práctica pese a que solo uno de nosotros ha podido realizar los commits, esto a sucedido debido a problemas en la instalación de las herramientas de prácticas pero, pese a esto, el trabajo ha sido realizado en conjunto.
+
+- Durante el desarrollo de las pruebas hemos tratado de ser lo más precisos posibles cubriendo todas las aplicabilidades de las clases.
+
+- La realización de las pruebas no ha sido de gran dificultad. Donde hemos tenido que invertir un esfuerzo extra ha sido en comprender el manejo de las herramientas de seguimiento (Travis, Codecov, Actions en GitHub).
+
+- No se ha encontrado ningún fallo en el código.
